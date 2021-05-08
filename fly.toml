@@ -3,7 +3,8 @@
 app = "cache"
 
 kill_signal = "SIGINT"
-kill_timeout = 5
+# allow 5 minutes to cleanly shutdown
+kill_timeout = 300
 
 [[mounts]]
 source      = "redis_server"
